@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB101 Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 300px;
+            background: #ffffff;
+            padding: 20px;
+            border-right: 2px solid #ccc;
+        }
+        .sidebar h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+        li {
+            margin: 5px 0;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-box {
+            width: 70%;
+            height: 70%;
+            background: #ffffff;
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Title / Logo</h1>
+
+            <div class="section-title">Dashboard</div>
+            <ul>
+                <li>1. _______</li>
+                <li>2. _______</li>
+                <li>3. _______</li>
+                <li>4. _______</li>
+                <li>5. _______</li>
+            </ul>
+
+            <div class="section-title">Profile</div>
+            <ul>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="content-box">Content Page</div>
+        </div>
+    </div>
+</body>
+</html>
